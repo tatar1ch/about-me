@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-VF.woff2'),
+}
+
+:root {
+    --background-color: #D9D2D0;
+    --text-color: #0D0D0D;
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: calc(150px + 35vw) auto;
+}
+
+.next-container {
+    display: grid;
+    grid-template-columns: calc(90px + 22vw) auto;
+}
+
+.info-container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 2ch;
+    margin-right: 2ch;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-text-container {
+    display: grid;
+    grid-template-columns: calc(100px + 25vw) auto;
+}
+
+.name-and-description {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 350;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 350;
+}
+
+.text {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 450;
+    max-width: 48ch;
+    text-align: left;
+    line-height: 1.5;
+}
+
+p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-indent:50px;
+}
+
+.no-indent > p {
+    text-indent: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+li {
+    padding-bottom: 1rem;
+}
+
+li > p {
+    padding-top: 0;
+}
+
+.buttons {
+    grid-gap: 7.5rem;
+    margin-top: 9rem;
+}
+
+.btn-info {
+    font-size: 2.4rem;
+}
+
+.contacts-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 1481px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 450;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        grid-gap: 5.5rem;
+        margin-top: 7rem;
+    }
+    
+    .btn-info {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 961px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+        font-weight: 450;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        grid-gap: 4rem;
+        margin-top: 7rem;
+    }
+    
+    .btn-info {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 771px) {
+    .top-container {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .next-container {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .info-container {
+        order: 1;
+    }
+
+    .back {
+        order: 2;
+    }
+    
+    .name-and-description {
+        margin-top: 0rem;
+    }
+
+    .buttons {
+        grid-gap: 5.5rem;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 450;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .btn-info {
+        font-size: 1.5rem;
+        font-weight: 450;
+    }
+    
+    .arrow-down {
+        visibility: hidden;
+        max-height: 0;
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-info {
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #f21905
+}
+
+.back {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+}
+
+.profile-img {
+    width: 100%;
+}
+
+.arrow-down {
+    color: var(--text-color);
+    margin-top: auto;
+    font-size: 6em;
+    font-weight: 200;
+}
+
+.arrow-down:hover {
+    color: var(--text-color);
+}
+
+.footer-text {
+    font-size: 1.25rem;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
